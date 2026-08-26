@@ -78,3 +78,53 @@ footer{background:#111;color:#aaa;padding:40px 24px;text-align:center}footer .lo
     height: auto;
   }
 }
+/* Foto principal da abertura */
+.hero-photo-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-photo {
+  width: 100%;
+  height: min(70vh, 720px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.08),
+    rgba(0,0,0,0.38)
+  );
+  color: #fff;
+}
+
+.hero-photo-overlay h1 {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 82px);
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+}
+
+.hero-photo-overlay p {
+  margin: 12px 0 0;
+  font-size: clamp(17px, 2vw, 26px);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 700px) {
+  .hero-photo {
+    height: 55vh;
+  }
+}
