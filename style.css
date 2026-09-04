@@ -53,7 +53,8 @@ h1 span{color:var(--accent)}.lead{max-width:560px;color:var(--muted);font-size:1
 .section{max-width:1180px;margin:auto;padding:100px 24px}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about h2,.contact h2{font-size:45px;line-height:1.05}.text{color:var(--muted);font-size:18px}.text p+p{margin-top:18px}
 .video-showcase{background:var(--cream);padding:90px 24px}
-.video-showcase-inner{max-width:1050px;margin:auto;display:grid;grid-template-columns:minmax(280px,420px) 1fr;align-items:center;gap:90px}
+.video-showcase-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:minmax(520px,680px) 1fr;align-items:center;gap:70px}
+.video-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
 .video-frame{position:relative;padding:12px;background:#fff;border-radius:24px;box-shadow:24px 24px 0 var(--accent)}
 .video-frame video{width:100%;aspect-ratio:470/850;display:block;object-fit:cover;border-radius:15px;background:#111}
 .video-copy h2{font-size:clamp(36px,5vw,58px);line-height:1.04;letter-spacing:-2px}
@@ -66,7 +67,8 @@ h1 span{color:var(--accent)}.lead{max-width:560px;color:var(--muted);font-size:1
 footer{background:#111;color:#aaa;padding:40px 24px;text-align:center}footer .logo{color:white;margin-bottom:10px}footer p{font-size:13px;margin-top:5px}
 .floating{position:fixed;right:20px;bottom:20px;background:#168a4a;color:white;padding:14px 20px;border-radius:30px;font-weight:800;box-shadow:0 5px 20px #0003;z-index:20}
 @media(max-width:800px){.links{display:none}.nav{justify-content:space-between}.hero{grid-template-columns:1fr;padding-top:55px}.hero-card{height:300px}.hero-number{font-size:140px}.about,.contact{grid-template-columns:1fr;gap:40px}.grid{grid-template-columns:1fr}.cta{display:block}.cta .btn{margin-top:25px}.center h2,.about h2,.contact h2,.cta h2{font-size:34px}}
-@media(max-width:800px){.video-showcase{padding:65px 24px 80px}.video-showcase-inner{grid-template-columns:1fr;gap:60px}.video-frame{width:min(100%,390px);margin:auto;box-shadow:14px 14px 0 var(--accent)}.video-copy{text-align:center}.video-copy>p:not(.eyebrow){margin-left:auto;margin-right:auto}}
+@media(max-width:1000px){.video-showcase-inner{grid-template-columns:1fr;gap:60px}.video-pair{width:min(100%,720px);margin:auto}.video-copy{text-align:center}.video-copy>p:not(.eyebrow){margin-left:auto;margin-right:auto}}
+@media(max-width:800px){.video-showcase{padding:65px 24px 80px}.video-pair{grid-template-columns:1fr;gap:42px}.video-frame{width:min(100%,390px);margin:auto;box-shadow:14px 14px 0 var(--accent)}}
 /* Galeria de fotos da 2 Estilos */
 .gallery-section {
   padding-top: 80px;
